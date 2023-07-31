@@ -82,9 +82,9 @@ images:
   - $_BACKEND_IMAGE:$SHORT_SHA
 
 substitutions:
-  _FRONTEND_IMAGE: 'us-central1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-frontend'
-  _BACKEND_IMAGE: 'us-central1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-backend'
-  _REGION: us-central1
+  _FRONTEND_IMAGE: 'asia-southeast1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-frontend'
+  _BACKEND_IMAGE: 'asia-southeast1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-backend'
+  _REGION: asia-southeast1
 
 options:
   dynamic_substitutions: true

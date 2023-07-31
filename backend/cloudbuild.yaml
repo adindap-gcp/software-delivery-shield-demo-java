@@ -29,7 +29,7 @@ images:
   - $_BACKEND_IMAGE
 
 substitutions:
-  _BACKEND_IMAGE: 'us-central1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-backend:quickstart'
+  _BACKEND_IMAGE: 'asia-southeast1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-backend:quickstart'
 
 options:
   dynamic_substitutions: true

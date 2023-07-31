@@ -34,7 +34,7 @@ metadata:
   name: dev-cluster
 description: development cluster
 gke:
-  cluster: projects/PROJECT_ID/locations/us-central1/clusters/dev-cluster
+  cluster: projects/sandbox-369603/locations/asia-southeast1/clusters/dev-cluster
 
 ---
 apiVersion: deploy.cloud.google.com/v1
@@ -43,4 +43,4 @@ metadata:
   name: prod-cluster
 description: production cluster
 gke:
-  cluster: projects/PROJECT_ID/locations/us-central1/clusters/prod-cluster
+  cluster: projects/sandbox-369603/locations/asia-southeast1/clusters/prod-cluster

@@ -18,5 +18,5 @@ defaultAdmissionRule:
   evaluationMode: REQUIRE_ATTESTATION
   enforcementMode: ENFORCED_BLOCK_AND_AUDIT_LOG
   requireAttestationsBy:
-    - projects/PROJECT_ID/attestors/built-by-cloud-build # Automatically created after a Cloud Build build
-name: projects/PROJECT_ID/policy
+    - projects/sandbox-369603/attestors/built-by-cloud-build # Automatically created after a Cloud Build build
+name: projects/sandbox-369603/policy
