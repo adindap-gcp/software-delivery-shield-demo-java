@@ -67,8 +67,8 @@ steps:
       - "-xe"
       - "-c"
       - |
-        dev_url=$(gcloud run services describe guestbook-backend-dev --region us-central1 --format='value(status.url)')
-        prod_url=$(gcloud run services describe guestbook-backend-prod --region us-central1 --format='value(status.url)')
+        dev_url=$(gcloud run services describe guestbook-backend-dev --region asia-southeast1 --format='value(status.url)')
+        prod_url=$(gcloud run services describe guestbook-backend-prod --region asia-southeast1 --format='value(status.url)')
 
         sed -i "s|BACKEND_DEV|$dev_url|" ./frontend/cloudrun-manifests/guestbook-frontend.dev.service.yaml
         sed -i "s|BACKEND_PROD|$prod_url|" ./frontend/cloudrun-manifests/guestbook-frontend.prod.service.yaml
@@ -91,9 +91,9 @@ images:
   - $_BACKEND_IMAGE:$SHORT_SHA
 
 substitutions:
-  _FRONTEND_IMAGE: 'us-central1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-frontend'
-  _BACKEND_IMAGE: 'us-central1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-backend'
-  _REGION: us-central1
+  _FRONTEND_IMAGE: 'asia-southeast1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-frontend'
+  _BACKEND_IMAGE: 'asia-southeast1-docker.pkg.dev/${PROJECT_ID}/containers/java-guestbook-backend'
+  _REGION: asia-southeast1
 
 options:
   dynamic_substitutions: true

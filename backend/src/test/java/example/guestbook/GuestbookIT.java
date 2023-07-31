@@ -41,7 +41,7 @@ import org.junit.jupiter.api.Test;
 
 public class GuestbookIT {
   static String projectId;
-  static String location = "us-central1";
+  static String location = "asia-southeast1";
   static String remoteRepo;
   static String mavenRepo;
   static String containerRepo;

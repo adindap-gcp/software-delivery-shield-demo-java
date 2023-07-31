@@ -31,7 +31,7 @@ variable "existing_project_id" {
 variable "google_cloud_region" {
   type        = string
   description = "the Google Cloud region in which to create resources"
-  default     = "us-central1"
+  default     = "asia-southeast1"
 }
 
 variable "google_billing_account" {

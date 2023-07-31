@@ -19,7 +19,7 @@ resource "google_clouddeploy_target" "dev" {
   description = "dev cluster"
 
   gke {
-    cluster = format("projects/%s/locations/us-central1/clusters/dev-cluster", local.final_project_id)
+    cluster = format("projects/%s/locations/asia-southeast1/clusters/dev-cluster", local.final_project_id)
   }
   require_approval = false
 }
@@ -32,7 +32,7 @@ resource "google_clouddeploy_target" "prod" {
   description = "production cluster"
 
   gke {
-    cluster = format("projects/%s/locations/us-central1/clusters/prod-cluster", local.final_project_id)
+    cluster = format("projects/%s/locations/asia-southeast1/clusters/prod-cluster", local.final_project_id)
   }
   require_approval = false
 }
