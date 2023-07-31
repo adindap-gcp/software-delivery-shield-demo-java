@@ -18,7 +18,7 @@
   <repositories>
     <repository>
       <id>artifact-registry</id>
-      <url>artifactregistry://us-central1-maven.pkg.dev/PROJECT_ID/guestbook-maven-repo</url>
+      <url>artifactregistry://asia-southeast1-maven.pkg.dev/sandbox-369603/guestbook-maven-repo</url>
       <layout>default</layout>
       <releases>
         <enabled>true</enabled>
@@ -97,7 +97,7 @@
         <version>3.3.1</version>
         <configuration>
           <to>
-            <image>us-central1-docker.pkg.dev/${env.PROJECT_ID}/containers/java-guestbook-frontend:jib</image>
+            <image>asia-southeast1-docker.pkg.dev/${env.PROJECT_ID}/containers/java-guestbook-frontend:jib</image>
           </to>
         </configuration>
       </plugin>
