@@ -16,6 +16,8 @@
 # https://hub.docker.com/_/maven
 FROM maven:3-eclipse-temurin-17-alpine AS build-env
 
+RUN apk update
+
 # Set the working directory to /app
 WORKDIR /app
 
