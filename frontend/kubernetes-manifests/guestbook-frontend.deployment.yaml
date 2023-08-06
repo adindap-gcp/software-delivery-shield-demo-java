@@ -16,6 +16,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: java-guestbook-frontend
+  namespace: demo
   labels:
     app: java-guestbook
     tier: frontend
