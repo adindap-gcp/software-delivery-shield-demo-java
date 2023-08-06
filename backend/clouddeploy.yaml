@@ -35,6 +35,14 @@ metadata:
 description: development cluster
 gke:
   cluster: projects/sandbox-369603/locations/asia-southeast1/clusters/demo-dev-cluster
+  internalIp: true
+executionConfigs:
+- usages:
+  - DEPLOY
+  workerPool: "projects/p123/locations/asia-southeast1/workerPools/sb-demo-cb-pp"
+- usages:
+  - RENDER
+  - VERIFY
 
 # ---
 # apiVersion: deploy.cloud.google.com/v1

@@ -35,6 +35,7 @@ metadata:
 description: development cluster
 gke:
   cluster: projects/sandbox-369603/locations/asia-southeast1/clusters/demo-dev-cluster
+  internalIp: true
 executionConfigs:
 - usages:
   - DEPLOY
