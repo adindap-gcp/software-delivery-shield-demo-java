@@ -34,13 +34,20 @@ metadata:
   name: dev-cluster
 description: development cluster
 gke:
-  cluster: projects/sandbox-369603/locations/asia-southeast1/clusters/dev-cluster
+  cluster: projects/sandbox-369603/locations/asia-southeast1/clusters/demo-dev-cluster
 
----
-apiVersion: deploy.cloud.google.com/v1
-kind: Target
-metadata:
-  name: prod-cluster
-description: production cluster
-gke:
-  cluster: projects/sandbox-369603/locations/asia-southeast1/clusters/prod-cluster
+# ---
+# apiVersion: deploy.cloud.google.com/v1
+# kind: Target
+# metadata:
+#   name: prod-cluster
+# description: production cluster
+# gke:
+#   cluster: projects/sandbox-369603/locations/asia-southeast1/clusters/demo-cluster
+# executionConfigs:
+# - usages:
+#   - DEPLOY
+#   workerPool: "projects/p123/locations/asia-southeast1/workerPools/sb-demo-cb-pp"
+# - usages:
+#   - RENDER
+#   - VERIFY
